@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div>
+        <div class = "header">
+            <div class = "container">
+                <nav class="navbar">
+                    <div class="logo">
+                        <a href="#" width = "125px">GoldenGrainExchange</a>
+                    </div>
+                    <ul id="MenuItems">
+                        <li><a href="./index.html" >Home</a></li>
+                        <li><a href="./For Farmers.html">For Farmers</a></li>
+                        <li><a href="./For Delivery.html">For Delivery</a></li>
+                        <li><a href="./Shop.html"class="active">Shop</a></li>
+                        <li><a href="./For Factory.html">For Factory</a></li>
+                    </ul>
+                </nav>
+                <img src="Assets/menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+        </div>
+    <section class="product-section">
+       <div id="Title"><h1>
+        PRODUCTS
+       </h1></div>
+            <div class="Product-row1">
+                <div class="Product-item">
+                    <img src="./Assets/Arborio rice.png" alt="Aborio rice sack">
+                    <h4 class="Product-title">Aborio rice</h4>
+                    <h5 class="Product-Price">฿10(per kg)</h5>
+                    <button type="button" onclick="window.location.href='Cart.html'"class="Buy-Now">Buy Now</button>
+                    <button class="Add-Cart">Add to cart</button>
+                </div>
+                <div class="Product-item">
+                    <img src="./Assets/BrownBasari.png" alt="Brown Basari rice sack">
+                    <h4 class="Product-title">Brown Basari</h4>
+                    <h5 class="Product-Price">฿10(per kg)</h5>
+                    <button type="button" onclick="window.location.href='Cart.html'"class="Buy-Now">Buy Now</button>
+                    <button class="Add-Cart">Add to cart</button>
+
+
+
+
+                </div>
+                <div class="Product-item">
+                    <img src="./Assets/valencia.png" alt="Valencia rice sack">
+                    <h4 class="Product-title">Valencia Rice</h4>
+                    <h5 class="Product-Price">฿10(per kg)</h5>
+                    <button type="button" onclick="window.location.href='Cart.html'"class="Buy-Now">Buy Now</button>
+                    <button class="Add-Cart">Add to cart</button>
+                </div>
+                <!-- SEPERATION BETWEEN ROWS DONT FUCK IT UP -->
+            </div>
+            <div class="Product-row1">
+                <div class="Product-item">
+                    <img src="./Assets/Jasminerice.png" alt="Jasmine rice sack">
+                    <h4 class="Product-title">Jasmine Rice</h4>
+                    <h5 class="Product-Price">฿10(per kg)</h5>
+                    <button type="button" onclick="window.location.href='Cart.html'"class="Buy-Now">Buy Now</button>
+                    <button class="Add-Cart">Add to cart</button>
+                </div>
+                <div class="Product-item">
+                    <img src="./Assets/Redrice.png" alt="Red rice sack">
+                    <h4 class="Product-title">Red rice</h4>
+                    <h5 class="Product-Price">฿10(per kg)</h5>
+                    <button type="button" onclick="window.location.href='Cart.html'"class="Buy-Now">Buy Now</button>
+                    <button class="Add-Cart">Add to cart</button>
+
+
+
+
+                </div>
+                <div class="Product-item">
+                    <img src="./Assets/Long Grain.png" alt="Long Grain sack">
+                    <h4 class="Product-title">Long Grain</h4>
+                    <h5 class="Product-Price">฿10(per kg)</h5>
+                    <button type="button" onclick="window.location.href='Cart.html'"class="Buy-Now">Buy Now</button>
+                    <button class="Add-Cart">Add to cart</button>
+                </div>
+        </section>
+        <footer>
+            <div class="footer-content">
+                <h3>GoldenGrainExchange</h3>
+                <p>Improving Farmers lives since 1990 </p>
+                <ul class="socials">
+                    <li><a href="#"><i class='bx bxl-instagram' ></i></a></li>
+                    <li><a href="#"><i class='bx bxl-twitter' ></i></box-icon></a></li>
+                    <a href="#"><i class='bx bxl-facebook' ></i></box-icon></a>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>copyright &copy;2023 GoldenGrainExchange. Using this without permission will result in <span>Lawsuit</span></p>
+            </div>
+        </footer>
+</body>
+
+
+
+</html>

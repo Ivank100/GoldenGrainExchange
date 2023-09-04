@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Listing</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head>
+        <div class = "header">
+            <div class = "container">
+                <nav class="navbar">
+                    <div class="logo">
+                        <a href="./index.html" width = "125px">GoldenGrainExchange</a>
+                    </div>
+                    <ul id="MenuItems">
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./For Farmers.html" class="active">For Farmers</a></li>
+                        <li><a href="./For Delivery.html">For Delivery</a></li>
+                        <li><a href="./Shop.html">Shop</a></li>
+                        <li><a href="./For Factory.html">For Factory</a></li>
+                    </ul>
+                </nav>
+                <img src="Assets/menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+        </div>
+    <body>
+        <div class="container-new">
+            <h2>Create a Listing</h2>
+            <form action="process_listing.php" method="POST">
+                <label for="product_name">Product Name:</label>
+                <input type="text" id="product_name" name="product_name" required>
+    
+                <label for="product_description">Farm Name:</label>
+                <textarea id="product_description" name="product_description" required></textarea>
+    
+                <label for="product_price">Price:(Per Kg in baht)</label>
+                <input type="number" id="product_price" name="product_price" required>
+    
+                <label for="product_quantity">Quantity (in kg):</label>
+                <input type="number" id="product_quantity" name="product_quantity" required>
+    
+                <button type="submit">Submit Listing</button>
+            </form>
+        </div>
+    <footer>
+        <div class="footer-content">
+            <h3>GoldenGrainExchange</h3>
+            <p>Improving Farmers lives since 1990 </p>
+            <ul class="socials">
+                <li><a href="#"><i class='bx bxl-instagram' ></i></a></li>
+                <li><a href="#"><i class='bx bxl-twitter' ></i></box-icon></a></li>
+                <a href="#"><i class='bx bxl-facebook' ></i></box-icon></a>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>copyright &copy;2023 GoldenGrainExchange. Using this without permission will result in <span>Lawsuit</span></p>
+        </div>
+    </footer>
+</body>
+</html>
