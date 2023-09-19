@@ -3,8 +3,9 @@
     margin:0;
     padding:0; 
     box-sizing:border-box;
-    font-family: "Poppins",sans-serif;
+    font-family: "Poppins", sans-serif;
 }
+
 body{
     overflow-x: hidden;
     background: white;
@@ -17,7 +18,10 @@ body{
     font-weight:900;
 }
 .header {
-    background-color: #7D5A50;
+    position:fixed;
+    width: 100%;
+    background-color: #819171;
+    z-index: 1;
 }
 .container{
     max-width: 1300px;
@@ -43,15 +47,15 @@ nav ul li {
 a{
     font-family: "Poppins";
     font-size:18px;
-    color:white;
+    color: whitesmoke;
     text-decoration:none;
-    font-weight: 400;
+    font-weight: 500;
     margin:0 20px;
 
 }
 .navbar a:hover,
 .navbar a.active{
-    color: black;
+    color: #9c6644;
 }
 .menu-icon {
     width: 28px;
@@ -64,44 +68,201 @@ a{
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin-left: 200px;
 }
 .col-2{
-    padding-left: 20px;
-    flex-basis: 50%;
+    padding-top: 10%;
+    flex-basis: 40%;
     min-width: 300px;
 }
+.col-2 p{
+    color:  #333333;
+
+}
 .col-2 img {
+    padding-left: auto;
+    position: static;
     max-width: 100%;
-    padding: 50px 0;
+    padding: 70x ;
+    left: -120px
 }
 .col-2 h1 {
     font-size: 50px;
     line-height: 60px;
     margin: 25px 0;
+    color:#333333;
 }
-#GG {
-    color: #7D5A50;
+#GG {   
+    color:#BDA550;
+    position: relative;
 }
 .btn{
     margin-top: 10px;
     margin-left: 0px;
     display:inline-block;
     padding: 5px 20px;
-    background:#7D5A50;
-    border: 2px solid #7D5A50;
+    background: #819171;
+    border: 2px solid #819171;
     border-radius: 6px;
     box-shadow: 0 0 10px rgba(0,0,0,.1);
     font-size:16px;
-    color:#eaeaea;
+    color: whitesmoke;
     letter-spacing: 1px;
     text-decoration: none;
-    font-weight:700;
+    font-weight:600;
     transition: .5s;
 }
 .btn:hover{
     background: transparent;
-    color:#7D5A50;
+    color:#819171;
 }
+/* This is the Products section */
+
+
+
+/* This is the About us page */
+.About-us{
+    position: relative;
+    display: box;
+    width: 100%;
+    height: 400px;
+    font-family: "Poppins";
+    margin-top:10%;
+    background-color:#819171;
+    color: white;
+
+}
+.About-us:before{
+    content: "";
+    position: absolute;
+    top: -50px; 
+    left: 0;
+    right: 0;
+    height: 100px; 
+    background: white;
+    border-radius: 50%; 
+
+}
+.About-us h2{
+    position: relative;
+    text-align: center;
+    align-items: center;
+    font-size: 50px;
+    top: 100px
+}
+.Aboutus-Content-Boxes{
+    position: relative; /* Changed from "absolute" to "relative" */
+    display: flex;
+    flex-wrap: wrap; /* Allow boxes to wrap to the next row */
+    justify-content: space-evenly; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    text-align: center;
+    top: 150px
+}
+.Our-Mission {
+    max-width: 100%;
+    width: 100%;
+    text-align: center;
+    color:white;
+    font-weight: 400;
+    background-color: #81715A;
+
+}
+.Our-Mission h3{
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 50px;
+}
+.Our-Mission-Boxes{
+    position: relative;
+    display: flex;
+    top: 50px;
+    align-items: center;
+    text-align: center;
+    width: 50%;
+    left: 25%;
+    justify-content: space-evenly;
+    margin-bottom: 100px;
+}
+#Mission-icon{
+    font-size: 100px;
+    text-align: center;
+}
+.Our-Mission p{
+    font-size: 14px;
+}
+.Our-Impact{
+    width: 100%;
+    background-color: #819171;
+    color: white;
+}
+.Our-Impact h2{
+    font-size: 40px;
+    text-align: center;
+
+}
+
+.Impact-List li{
+    position: relative;
+    top: 50px;
+    list-style: circle;
+    list-style-position:inside ;
+    font-size: 16px;
+    text-align: center;
+    justify-content: center;
+}
+/* This is the News Letter */
+.News-Letter{
+    width: auto;
+    height: 200px;
+    background-color: #81715A;
+}
+.News-Letter p{
+    position: relative;
+    font-size: 16px;
+    bottom: 30px;
+    color: whitesmoke;
+    font-weight: 400;
+    justify-content: center;
+
+}
+.News-Letter h2{
+    position: relative;
+    right: 500px;
+    top: 50px;
+    font-style: italic;
+    font-size: 30px;
+    color: white;
+}
+.email-input{
+    display: inline-block;
+    position: relative;
+    width: 280px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    border: 5px solid whitesmoke;
+    top: 15px;
+    justify-content: center;
+}
+.NewsLetter-Signup{
+    display: inline-block;
+    position: relative;
+    top: 15px;
+    justify-content: center;
+    width: 100px;
+    height: 40px;
+    border: 5px solid whitesmoke;
+    border-radius: 5px;
+    right:3px;
+}
+
+
+
+
+
+
 
 /* media query for menu */
 @media only screen and (max-width:800px) {
@@ -212,83 +373,7 @@ footer{
     
 }
 
-/* THIS IS THE PRODUCTS PAGE */
-#Title{
-    background-image: url(./Assets/banner.png);
-    text-align: center;
-    font-weight: 600;
-    font-size: 40px;
-    margin-top: -300px;
-    color:#eaeaea;
-    width: 100vw;
-    margin-left: -100px;
-    font-family: sans-serif
-}
-.Product-item img{
-    width:200px;
-}
-.product-section{
-    padding: 300px 6%;
-}
-.Product-row1{
-    display:flex;
-    justify-content: center;
 
-}
-.Product-item{
-    text-align: center;
-    padding: 40px;
-    background-color: eaeaea;
-    transition: 0.3s ease;
-
-} 
-.Product-item:hover{
-    transform: scale(1.05);
-
-} 
-.Product-Price{
-    font-weight: 900px;
-    font-size: 15px;
-
-}
-.Add-Cart{
-    display:inline-block;
-    padding: 5px 15px;
-    background:#7D5A50;
-    border: 2px solid #7D5A50;
-    border-radius: 6px;
-    box-shadow: 0 0 10px rgba(0,0,0,.1);
-    font-size:12px;
-    color:#eaeaea;
-    letter-spacing: 1px;
-    text-decoration: none;
-    font-weight:900;
-    transition: .5s;
-
-}
-.Add-Cart:hover{
-    background: transparent;
-    color:#7D5A50;
-
-}
-.Buy-Now{
-    display:inline-block;
-    padding: 5px 15px;
-    background:#7D5A50;
-    border: 2px solid #7D5A50;
-    border-radius: 6px;
-    box-shadow: 0 0 10px rgba(0,0,0,.1);
-    font-size:12px;
-    color:#eaeaea;
-    letter-spacing: 1px;
-    text-decoration: none;
-    font-weight:900;
-    transition: .5s;
-}
-.Buy-Now:hover{
-    background: transparent;
-    color:#7D5A50;
-}
 
 /* THIS IS CART PAGE */ 
 .total-price{
@@ -304,6 +389,7 @@ footer{
 
 td{
     padding:10px 5px;
+ 
 
 }
 td input{
@@ -320,6 +406,7 @@ td img{
     width:80px;
     height: 80px;
     margin-right:10px;
+    
 
 
 }
@@ -381,12 +468,12 @@ table{
     color:#7D5A50;}
 /* FOR Farmers 2*/
 .container-new {
+    padding-top: 10%;
     background-color: #fff;
     max-width: 500px;
     margin: 0 auto;
-    padding: 20px;
     border-radius: 8px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    padding-bottom: 10%;
 }
 
 h2 {
@@ -430,21 +517,10 @@ button[type="submit"]:hover {
 
 /* For Factory*/
 .Table img{
-    margin-left: 400px  ;
+    position: relative;
+    left: 600px;
+    top:100px;
     margin-bottom: 300px;
     width: 700px;
-    margin-top:100px
-}
-.Button-Delivery{
-    margin-left:780px;
-    margin-top: -300px;
-    padding-bottom: 200px;
-
-}
-/* For Delivery*/
-.Button-Factory{
-    margin-left:980px;
-    margin-top: -300px;
-    padding-bottom: 200px;
 
 }
